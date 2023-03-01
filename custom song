@@ -1,0 +1,86 @@
+use_bpm 83
+use_synth :piano
+
+2.times do
+  #measure 1 and 2
+  play:e2
+  sleep 0.5
+  play:e2
+  sleep 0.25
+  play:e2
+  sleep 0.25
+  
+  play:e2
+  play:a2
+  sleep 0.25
+  play:e2
+  sleep 0.25
+  play:e2
+  sleep 0.25
+  play:a2
+  play:e2
+  sleep 0.25
+  
+  play:e2
+  sleep 0.25
+  play:e2
+  sleep 0.25
+  play:e2
+  sleep 0.25
+  play :e2, release: 0.2
+  sleep 0.25
+  
+  play:e2
+  sleep 0.25
+  play:e2
+  sleep 0.25
+  play:a2
+  play:e2
+  sleep 0.125
+  play:as2
+  sleep 0.125
+  play:b2
+  sleep 0.25
+  
+  2.times do
+    play:e2
+    sleep 0.5
+    play:e2
+    sleep 0.25
+    play:e2
+    sleep 0.25
+    
+    play:e2
+    play:a2
+    sleep 0.25
+    play:e2
+    sleep 0.25
+    play:e2
+    sleep 0.25
+    play:a2
+    play:e2
+    sleep 0.25
+    
+    play:e2
+    sleep 0.25
+    play:e2
+    sleep 0.25
+    play:a2
+    play:e2
+    sleep 0.25
+    play:e2
+    sleep 0.25
+    
+    play:e2
+    sleep 0.25
+    play:e2
+    sleep 0.25
+    play:a2
+    play:e2
+    sleep 0.125
+    play:as2
+    sleep 0.125
+    play:b2
+    sleep 0.25
+  end
+end
