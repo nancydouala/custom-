@@ -1,15 +1,18 @@
-use_bpm 83
-use_synth :piano
+intro = "C:/Users/nancy_douala/Downloads/Nirvana - In Bloom (Official Music Video)2.wav"
 
-2.times do
-  #measure 1 and 2
+sample intro
+sleep 13
+
+define :note1 do
   play:e2
   sleep 0.5
   play:e2
   sleep 0.25
   play:e2
   sleep 0.25
-  
+end
+
+define :note2 do
   play:e2
   play:a2
   sleep 0.25
@@ -20,6 +23,14 @@ use_synth :piano
   play:a2
   play:e2
   sleep 0.25
+end
+
+
+2.times do
+  #measure 1 and 2
+  note1
+  
+  note2
   
   play:e2
   sleep 0.25
@@ -27,7 +38,7 @@ use_synth :piano
   sleep 0.25
   play:e2
   sleep 0.25
-  play :e2, release: 0.2
+  play:e2
   sleep 0.25
   
   play:e2
@@ -42,24 +53,11 @@ use_synth :piano
   play:b2
   sleep 0.25
   
+  
   2.times do
-    play:e2
-    sleep 0.5
-    play:e2
-    sleep 0.25
-    play:e2
-    sleep 0.25
+    note1
     
-    play:e2
-    play:a2
-    sleep 0.25
-    play:e2
-    sleep 0.25
-    play:e2
-    sleep 0.25
-    play:a2
-    play:e2
-    sleep 0.25
+    note2
     
     play:e2
     sleep 0.25
@@ -68,7 +66,7 @@ use_synth :piano
     play:a2
     play:e2
     sleep 0.25
-    play:e2
+    play :e2, release: 0.2
     sleep 0.25
     
     play:e2
@@ -82,5 +80,21 @@ use_synth :piano
     sleep 0.125
     play:b2
     sleep 0.25
+    
+    4.times do
+      play:g5
+      sleep 0.5
+      play:g5
+      sleep 0.25
+      play:g5
+      sleep 0.25
+      
+      play:g5
+      sleep 0.25
+      play:g5
+      sleep 0.25
+      
+      
+      
+    end
   end
-end
