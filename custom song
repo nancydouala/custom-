@@ -1,35 +1,38 @@
 use_bpm 83
 use_synth :piano
 
+
 intro = "C:/Users/nancy_douala/Downloads/Nirvana - In Bloom (Official Music Video)2.wav"
+close = "C:/Users/nancy_douala/Downloads/tomp3.cc - Post Malone.wav"
+
+
 
 sample intro
 sleep 13
 
 define :note1 do
-  play:e2
+  play:e2, amp: 0.7
   sleep 0.5
-  play:e2
   sleep 0.25
-  play:e2
+  play:e2, amp: 0.7
   sleep 0.25
 end
 
 define :note2 do
-  play:e2
-  play:a2
+  play:e2, amp: 0.75
+  play:a2, amp: 0.75
   sleep 0.25
-  play:e2
+  play:e2, amp: 1
   sleep 0.25
-  play:e2
+  play:e2, amp: 1.5
   sleep 0.25
-  play:a2
-  play:e2
+  play:a2, amp: 1.5
+  play:e2, amp: 1.5
   sleep 0.25
 end
 
 
-1.times do
+2.times do
   #measure 1 and 2
   note1
   
@@ -57,7 +60,7 @@ end
   sleep 0.25
 end
 
-1.times do
+2.times do
   note1
   
   note2
@@ -167,5 +170,13 @@ end
     end
     stop
   end
-  stop
 end
+sleep 12
+sample :drum_bass_hard
+sleep 1
+sample :drum_bass_hard
+sleep 1
+sample :drum_bass_hard
+sleep 1
+sample :drum_bass_hard
+sample close
