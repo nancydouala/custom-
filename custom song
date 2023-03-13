@@ -1,4 +1,4 @@
-use_bpm 83
+use_bpm 86
 use_synth :piano
 
 
@@ -8,7 +8,7 @@ close = "C:/Users/nancy_douala/Downloads/tomp3.cc - Post Malone.wav"
 
 
 sample intro
-sleep 13
+sleep 12
 
 define :note1 do
   play:e2, amp: 0.7
@@ -38,25 +38,25 @@ end
   
   note2
   
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
   
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:a2
-  play:e2
+  play:a2, amp: 1.7
+  play:e2, amp: 1.7
   sleep 0.125
-  play:as2
+  play:as2, amp: 1.7
   sleep 0.125
-  play:b2
+  play:b2, amp: 1.7
   sleep 0.25
 end
 
@@ -65,26 +65,26 @@ end
   
   note2
   
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:a2
-  play:e2
+  play:a2, amp: 1.7
+  play:e2, amp: 1.7
   sleep 0.25
-  play :e2, release: 0.2
+  play :e2, release: 0.2, amp: 1.7
   sleep 0.25
   
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:e2
+  play:e2, amp: 1.7
   sleep 0.25
-  play:a2
-  play:e2
+  play:a2, amp: 1.7
+  play:e2, amp: 1.7
   sleep 0.125
-  play:as2
+  play:as2, amp: 1.7
   sleep 0.125
-  play:b2
+  play:b2, amp: 1.7
   sleep 0.25
 end
 
@@ -97,6 +97,8 @@ end
       sleep 0.25
       play:e2
       sleep 0.25
+      sample :drum_bass_hard , amp:1
+      sample :drum_snare_soft
       play:e2
       sleep 0.25
       play:e2
@@ -154,12 +156,17 @@ end
       play :b2
       play :e2
       sleep 0.75
+      sample :drum_bass_hard
+      sample :drum_snare_hard
       play :b2
       play :e2
       sleep 0.75
       play :b2
       play :e2
       sleep 1
+      sample :drum_bass_hard
+      sample :drum_snare_hard
+      sample :drum_heavy_kick
       play :b2
       play :a2
       sleep 0.125
@@ -172,11 +179,17 @@ end
   end
 end
 sleep 12
-sample :drum_bass_hard
+sample :drum_bass_hard , amp:1
+sample :drum_snare_soft
 sleep 1
-sample :drum_bass_hard
+sample :drum_bass_hard, amp:1
+sample :drum_snare_soft
 sleep 1
-sample :drum_bass_hard
+sample :drum_bass_hard, amp:1
+sample :drum_snare_soft
 sleep 1
-sample :drum_bass_hard
-sample close
+sample :drum_bass_hard, amp:1
+sample :drum_snare_soft
+sample :drum_cymbal_hard, amp:1, beat_stretch:2
+sample close, amp:2
+
